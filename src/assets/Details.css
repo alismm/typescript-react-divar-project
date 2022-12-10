@@ -1,0 +1,79 @@
+.detailsCard {
+  margin: 10px;
+  position: relative;
+}
+
+.detailsCard-close {
+  color: #ffffff;
+  border: 1px solid #282c34;
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 1px;
+  border-radius: 50%;
+  height: 25px;
+  width: 23px;
+  text-align: center;
+  background-color: #282c34;
+  transition: 1s;
+}
+
+.detailsCard-close:hover {
+  box-shadow: rgba(100, 100, 111, 0.2) 0 7px 29px 0;
+}
+
+.detailsCard-date {
+  color: #bebebe;
+  font-size: 0.8rem;
+}
+
+.detailsCard-contact {
+  cursor: pointer;
+  white-space: nowrap;
+  width: 6rem;
+  color: #ffff;
+  padding: 4px 5px;
+  background: #ef3b51;
+  border: 1px solid #ef3b51;
+  border-radius: 4px;
+  margin: 5px;
+}
+
+.detailsCard-chat {
+  color: #232933;
+  background-color: transparent;
+  border: 1px solid #232933;
+}
+
+.status {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #eeee;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+}
+
+.price {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #eeee;
+  padding-bottom: 10px;
+  margin-bottom: 25px;
+}
+
+.info {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 25px;
+}
+
+.detail-text {
+  margin-bottom: 15px;
+}
+
+@media screen and (min-width: 576px) {
+  .detailsCard {
+    margin: 0;
+  }
+}

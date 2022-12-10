@@ -1,0 +1,131 @@
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  background-color: #232933;
+  padding: 0.5rem 1.5rem;
+  position: sticky;
+  top: 5px;
+  z-index: 1;
+  margin: 15px 5px;
+  border-radius: 7px;
+  -webkit-border-radius: 7px;
+  -moz-border-radius: 7px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0 2px 8px 0;
+}
+
+.header-searchBox {
+  padding: 5px;
+  height: 2rem;
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  border: 1px solid;
+}
+
+.header-logo {
+  width: 2rem;
+}
+
+.main-container {
+  display: flex;
+  align-items: flex-start;
+  align-content: flex-start;
+}
+
+.details-sm-container {
+  padding: 10px;
+  margin: 0 5px;
+  border: 1px solid #61dafb;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0 2px 8px 0;
+}
+
+.card-container {
+  display: flex;
+  justify-content: start;
+  flex-wrap: wrap;
+}
+
+.card {
+  flex: 100%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #eeee;
+  border-radius: 5px;
+  padding: 12px;
+  margin: 5px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0 1px 4px;
+}
+
+.card-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 80%;
+  height: 100%;
+}
+
+.card-title {
+  font-size: 1.3rem;
+}
+
+.card-footer {
+  display: flex;
+  flex-direction: column;
+}
+
+.card-footer span {
+  color: #bebebe;
+  font-size: 0.8rem;
+}
+
+.resultsNotFoundText {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+}
+
+.card-img {
+  width: 50%;
+  height: 8rem;
+  margin-right: 0.5rem;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+}
+
+.details-container {
+  width: 100%;
+}
+
+@media screen and (max-width: 576px) {
+  .details-sm-container {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 576px) {
+  .card {
+    flex: 45%;
+  }
+
+  .details-container {
+    display: none;
+  }
+
+  .details-sm-container {
+    width: 70rem;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .card {
+    flex: 25%;
+  }
+}
